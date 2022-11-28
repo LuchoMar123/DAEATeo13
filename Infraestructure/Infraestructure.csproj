@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Infraestructure</RootNamespace>
     <AssemblyName>Infraestructure</AssemblyName>
-    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -47,6 +48,10 @@
     <Compile Include="Migrations\202206150121244_v1_Create_People.designer.cs">
       <DependentUpon>202206150121244_v1_Create_People.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202211280306472_Create_Product.cs" />
+    <Compile Include="Migrations\202211280306472_Create_Product.designer.cs">
+      <DependentUpon>202211280306472_Create_Product.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -67,6 +72,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202206150121244_v1_Create_People.resx">
       <DependentUpon>202206150121244_v1_Create_People.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202211280306472_Create_Product.resx">
+      <DependentUpon>202211280306472_Create_Product.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
